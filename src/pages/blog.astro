@@ -1,58 +1,68 @@
+---
+const pageTitle = "Mi blog de aprendisaje";
+---
+
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{pageTitle}</title>
+    </head>
 
-	<body>
-		
-		<header class="header">
-			<div class="logo">sldeny</div>
-			<nav class="nav">
-				<a href="/">Home</a>
-				<a href="/about/">About</a>
-				<a href="/blog/">Blog</a>
-			</nav>
-		</header>
+    <body>
+        <header class="header">
+            <div class="logo">sldeny</div>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/blog/">Blog</a>
+            </nav>
+        </header>
 
-		<h1>Astro Blog</h1>
-	</body>
+        <h1>{pageTitle}</h1>
+        <p>This is where I will post about my journey learning Astro.</p>
+        <ul>
+            <li><a href="/posts/post-1/">Post 1</a></li>
+            <li><a href="/posts/post-2/">Post 2</a></li>
+            <li><a href="/posts/post-3/">Post 3</a></li>
+        </ul>
+    </body>
 
-	<style>
-		.header {
-			width: auto;
-			padding: 14px 30px;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			background: #ffffffd9;
-			backdrop-filter: blur(10px);
-			border-bottom: 1px solid #e8e8e8;
-			position: sticky;
-			top: 0;
-		}
+    <style>
+        .header {
+            width: auto;
+            padding: 14px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffffd9;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e8e8e8;
+            position: sticky;
+            top: 0;
+        }
 
-		.logo {
-			font-size: 1.4rem;
-			font-weight: 700;
-			color: #222;
-			letter-spacing: 0.5px;
-		}
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #222;
+            letter-spacing: 0.5px;
+        }
 
-		.nav a {
-			margin-left: 20px;
-			text-decoration: none;
-			font-size: 1rem;
-			color: #444;
-			transition: 0.25s ease;
-		}
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            color: #444;
+            transition: 0.25s ease;
+        }
 
-		.nav a:hover {
-			color: #000;
-			transform: translateY(-2px);
-		}
-	</style>
+        .nav a:hover {
+            color: #000;
+            transform: translateY(-2px);
+        }
+    </style>
+
 </html>
